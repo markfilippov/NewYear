@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Письмо Деду Морозу - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Dancing+Script:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Дополнительные стили для мобильной оптимизации */
+        .tree-huge {
+            font-size: clamp(80px, 20vw, 180px);
+        }
+        
+        .santa-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Улучшение отзывчивости для мобильных */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 15px 10px;
+            }
+            
+            .welcome-section {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Гирлянда -->
+    <div class="garland"></div>
+    
+    <!-- Аудиоплеер -->
+    <audio id="background-music" loop>
+        <!-- Добавьте сюда путь к вашей музыке -->
+        <source src="music/new-year-music.mp3" type="audio/mpeg">
+        <source src="music/new-year-music.ogg" type="audio/ogg">
+        Ваш браузер не поддерживает аудио элементы.
+    </audio>
+    
+    <div class="container">
+        <header>
+            <!-- Гирлянда на шапке -->
+            <div class="header-garland"></div>
+            <h1>Письмо Деду Морозу</h1>
+            <p class="subtitle">Создай самое волшебное новогоднее письмо!</p>
+        </header>
+        
+        <main>
+            <div class="welcome-section">
+                <div class="santa-img">
+                    <!-- Изображение Деда Мороза загружается из папки images -->
+                    <img src="images/santa.png" alt="Дед Мороз" onerror="this.style.display='none'">
+                </div>
+                <div class="welcome-text">
+                    <h2>Добро пожаловать в мастерскую чудес!</h2>
+                    <p>Скоро наступит самый волшебный праздник - Новый год! А что делает его по-настоящему волшебным? Конечно же, письма Деду Морозу!</p>
+                    <p>Мы поможем тебе создать самое необычное, смешное и душевное письмо. Ответь на наши веселые вопросы, и мы составим уникальное послание, которое точно растопит сердце Дедушки Мороза.</p>
+                    <p>Готов(а) окунуться в мир новогодних чудес?</p>
+                    
+                    <div class="action-buttons">
+                        <a href="questions.html" class="btn">Начать создание письма</a>
+                        <a href="#how-it-works" class="btn secondary">Как это работает</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features" id="how-it-works">
+                <h2>Как создается письмо?</h2>
+                <div class="feature-cards">
+                    <div class="card">
+                        <div class="card-icon">1</div>
+                        <h3>Отвечай на вопросы</h3>
+                        <p>10 веселых вопросов о твоих новогодних мечтах и приключениях</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">2</div>
+                        <h3>Наслаждайся процессом</h3>
+                        <p>Вопросы поднимут настроение и заставят улыбнуться</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">3</div>
+                        <h3>Получи шедевр</h3>
+                        <p>Мы соберем все ответы в настоящее старинное письмо для Деда Мороза</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <h2>Почему это волшебно?</h2>
+                <div class="feature-cards">
+                    <div class="card">
+                        <div class="card-icon">❄</div>
+                        <h3>Уникальный дизайн</h3>
+                        <p>Каждое письмо выглядит как старинный манускрипт с печатями</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">✉</div>
+                        <h3>Настоящий дух праздника</h3>
+                        <p>Почувствуй атмосферу волшебства и детской веры в чудо</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎁</div>
+                        <h3>Сюрприз в каждом слове</h3>
+                        <p>Твои ответы превратятся в удивительную историю для Деда Мороза</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- БОЛЬШАЯ СЕКРЕТНАЯ ЕЛКА В КОНЦЕ СТРАНИЦЫ (НЕ ФИКСИРОВАННАЯ) -->
+            <div class="secret-tree-bottom">
+                <div class="tree-huge">🎄</div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 Мастерская новогодних писем Деду Морозу</p>
+            <p>Сайт создан для того, чтобы дарить новогоднее настроение!</p>
+        </footer>
+    </div>
+    
+    <!-- Декоративные элементы -->
+    <div class="decoration ball">🔴</div>
+    <div class="decoration gift">🎁</div>
+    <div class="decoration star">⭐</div>
+    <div class="decoration bell">🔔</div>
+    <div class="decoration candy">🍬</div>
+    
+    <!-- Панель управления музыкой -->
+    <div class="music-controls">
+        <button id="toggle-music-btn">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <div class="music-info">Музыка: ВКЛ</div>
+    </div>
+    
+    <script>
+        // Анимация снежинок
+        document.addEventListener('DOMContentLoaded', function() {
+            const snowflakesContainer = document.createElement('div');
+            snowflakesContainer.className = 'snowflakes';
+            document.body.appendChild(snowflakesContainer);
+            
+            // Создаем снежинки (меньше на мобильных)
+            const isMobile = window.innerWidth <= 768;
+            const snowflakeCount = isMobile ? 40 : 60;
+            
+            for(let i = 0; i < snowflakeCount; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.innerHTML = '❄';
+                
+                // Случайные параметры для снежинок
+                const size = Math.random() * (isMobile ? 15 : 25) + (isMobile ? 8 : 10);
+                const left = Math.random() * 100;
+                const animationDuration = Math.random() * 15 + 10;
+                const opacity = Math.random() * 0.5 + 0.3;
+                const animationDelay = Math.random() * 10;
+                
+                snowflake.style.left = left + 'vw';
+                snowflake.style.fontSize = size + 'px';
+                snowflake.style.animationDuration = animationDuration + 's';
+                snowflake.style.opacity = opacity;
+                snowflake.style.animationDelay = animationDelay + 's';
+                
+                snowflakesContainer.appendChild(snowflake);
+            }
+            
+            // Если изображение Деда Мороза не загрузилось, показываем заглушку
+            const santaImg = document.querySelector('.santa-img img');
+            if(santaImg && santaImg.complete && santaImg.naturalWidth === 0) {
+                const santaContainer = document.querySelector('.santa-img');
+                santaContainer.innerHTML = '<div style="font-size: clamp(60px, 15vw, 100px); color: #c62828;">🎅</div>';
+            }
+            
+            // Управление музыкой
+            const music = document.getElementById('background-music');
+            const toggleBtn = document.getElementById('toggle-music-btn');
+            const musicInfo = document.querySelector('.music-info');
+            
+            // Устанавливаем громкость
+            music.volume = 0.3;
+            
+            // Функция для обновления отображения кнопки
+            function updateMusicButton() {
+                if (music.paused) {
+                    toggleBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+                    musicInfo.textContent = 'Музыка: ВЫКЛ';
+                } else {
+                    toggleBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+                    musicInfo.textContent = 'Музыка: ВКЛ';
+                }
+            }
+            
+            // Функция для переключения музыки
+            function toggleMusic() {
+                if (music.paused) {
+                    const playPromise = music.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            // Музыка успешно запущена
+                            updateMusicButton();
+                            localStorage.setItem('musicPlaying', 'true');
+                            localStorage.setItem('musicVolume', music.volume);
+                        }).catch(error => {
+                            // Ошибка воспроизведения
+                            console.log("Ошибка воспроизведения:", error);
+                            updateMusicButton();
+                        });
+                    }
+                } else {
+                    music.pause();
+                    updateMusicButton();
+                    localStorage.setItem('musicPlaying', 'false');
+                    localStorage.setItem('musicVolume', music.volume);
+                }
+            }
+            
+            // Включаем музыку автоматически при загрузке
+            function startMusic() {
+                if (music.paused) {
+                    const playPromise = music.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            // Музыка успешно запущена
+                            console.log("Музыка включена автоматически");
+                            updateMusicButton();
+                            localStorage.setItem('musicPlaying', 'true');
+                            localStorage.setItem('musicVolume', music.volume);
+                        }).catch(error => {
+                            // Автовоспроизведение заблокировано
+                            console.log("Автовоспроизведение заблокировано");
+                            updateMusicButton();
+                            
+                            // Подсвечиваем кнопку
+                            musicInfo.innerHTML = 'Нажмите для включения';
+                            musicInfo.style.color = '#ff5722';
+                            
+                            setTimeout(() => {
+                                musicInfo.innerHTML = 'Музыка: ВЫКЛ';
+                                musicInfo.style.color = '';
+                            }, 3000);
+                        });
+                    }
+                }
+            }
+            
+            // Обработчик клика на кнопку
+            toggleBtn.addEventListener('click', toggleMusic);
+            
+            // Начинаем воспроизведение с небольшой задержкой
+            setTimeout(startMusic, 800);
+            
+            // Восстанавливаем состояние из localStorage
+            const savedMusicState = localStorage.getItem('musicPlaying');
+            const savedVolume = localStorage.getItem('musicVolume');
+            
+            if (savedVolume) {
+                music.volume = parseFloat(savedVolume);
+            }
+            
+            if (savedMusicState === 'false') {
+                // Если пользователь выключил музыку на другой странице
+                music.pause();
+                updateMusicButton();
+            }
+            
+            // Сохраняем состояние при изменении
+            music.addEventListener('play', function() {
+                localStorage.setItem('musicPlaying', 'true');
+                localStorage.setItem('musicVolume', music.volume);
+                updateMusicButton();
+            });
+            
+            music.addEventListener('pause', function() {
+                localStorage.setItem('musicPlaying', 'false');
+                localStorage.setItem('musicVolume', music.volume);
+                updateMusicButton();
+            });
+            
+            // Инициализируем отображение кнопки
+            updateMusicButton();
+            
+            // БОЛЬШАЯ СЕКРЕТНАЯ ЕЛКА В КОНЦЕ СТРАНИЦЫ - обработка клика
+            const secretTreeBottom = document.querySelector('.secret-tree-bottom');
+            secretTreeBottom.addEventListener('click', function() {
+                // Создаем эффект искр при клике
+                const isMobile = window.innerWidth <= 768;
+                const sparkCount = isMobile ? 12 : 20;
+                
+                for(let i = 0; i < sparkCount; i++) {
+                    setTimeout(() => {
+                        const spark = document.createElement('div');
+                        spark.innerHTML = '✨';
+                        
+                        // Позиционируем относительно елки
+                        const treeRect = secretTreeBottom.getBoundingClientRect();
+                        spark.style.position = 'fixed';
+                        spark.style.left = (treeRect.left + treeRect.width / 2) + 'px';
+                        spark.style.top = (treeRect.top + treeRect.height / 2) + 'px';
+                        spark.style.fontSize = (Math.random() * (isMobile ? 20 : 30) + (isMobile ? 15 : 20)) + 'px';
+                        spark.style.color = '#ffd700';
+                        spark.style.opacity = '1';
+                        spark.style.zIndex = '1000';
+                        spark.style.pointerEvents = 'none';
+                        spark.style.transform = 'translate(-50%, -50%)';
+                        
+                        // Случайное направление
+                        const angle = Math.random() * 360;
+                        const distance = Math.random() * (isMobile ? 60 : 100) + (isMobile ? 30 : 50);
+                        const rad = angle * Math.PI / 180;
+                        const x = Math.cos(rad) * distance;
+                        const y = Math.sin(rad) * distance;
+                        
+                        spark.style.animation = `sparkFly ${Math.random() * 1 + 0.5}s linear forwards`;
+                        spark.style.setProperty('--end-x', x + 'px');
+                        spark.style.setProperty('--end-y', y + 'px');
+                        
+                        document.body.appendChild(spark);
+                        
+                        // Удаляем искру после анимации
+                        setTimeout(() => {
+                            spark.remove();
+                        }, 1500);
+                    }, i * 50);
+                }
+                
+                // Показываем уведомление "Ты нашел секрет"
+                const message = document.createElement('div');
+                message.innerHTML = '🎉 Ты нашел секрет! 🎉';
+                message.style.position = 'fixed';
+                message.style.top = '50%';
+                message.style.left = '50%';
+                message.style.transform = 'translate(-50%, -50%)';
+                message.style.backgroundColor = 'rgba(255, 215, 0, 0.95)';
+                message.style.color = '#0a0a2a';
+                message.style.padding = '20px 30px';
+                message.style.borderRadius = '20px';
+                message.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.4)';
+                message.style.zIndex = '1001';
+                message.style.fontFamily = "'Montserrat', sans-serif";
+                message.style.fontSize = 'clamp(1.5rem, 5vw, 2.5rem)';
+                message.style.fontWeight = 'bold';
+                message.style.textAlign = 'center';
+                message.style.border = '4px solid #c62828';
+                message.style.animation = 'pulse 1s ease-in-out';
+                message.style.maxWidth = '90%';
+                message.style.wordWrap = 'break-word';
+                
+                document.body.appendChild(message);
+                
+                // Добавляем анимацию pulse и sparkFly
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    @keyframes pulse {
+                        0%, 100% { transform: translate(-50%, -50%) scale(1); }
+                        50% { transform: translate(-50%, -50%) scale(1.1); }
+                    }
+                    @keyframes sparkFly {
+                        0% { 
+                            transform: translate(-50%, -50%) rotate(0deg);
+                            opacity: 1;
+                        }
+                        100% { 
+                            transform: translate(calc(-50% + var(--end-x)), calc(-50% + var(--end-y))) rotate(360deg);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                // Переход на секретную страницу через 2 секунды
+                setTimeout(() => {
+                    message.style.opacity = '0';
+                    message.style.transition = 'opacity 0.5s ease';
+                    setTimeout(() => {
+                        message.remove();
+                        style.remove();
+                        window.location.href = 'secret.html';
+                    }, 500);
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
